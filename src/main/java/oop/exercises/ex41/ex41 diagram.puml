@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Exercise_41 {
+    - Alphabetizing the contents of a file
+    - Sorting file contents
+    - Read a list of names
+    - Define variables
+
+    + ArrayList<String>(Arrays.asList())
+}
+
+class FileManager {
+    - Read the given file
+    - Process file as list
+    - Sort file alphabetically
+    - Create a file for the modified output
+    - Count amount of names in list
+    - Write new file with sorted list
+
+    + readFile(namesList)
+    + sortList(namesList)
+    + writeFile(outputString)
+}
+
+Exercise_41 o--> FileManager
+
+
+@enduml

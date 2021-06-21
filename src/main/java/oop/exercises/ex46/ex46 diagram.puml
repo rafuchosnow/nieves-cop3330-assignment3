@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Exercise_46 {
+    - Knowing how often a word appears
+    - Word analysis
+    - Call methods from another class
+    - Display a histogram
+    - Define variables
+
+    + ArrayList<String>(Arrays.asList())
+    + System.out.println()
+}
+
+class WordFrequency {
+    - Read the given file
+    - Process file as list
+    - Counts the frequency of words
+    - Construct a histogram
+
+    + readFile(wordList)
+    + duplicateRemover(uniqueWordList)
+    + printTable(wordList, uniqueWordList)
+}
+
+Exercise_46 o--> WordFrequency
+
+@enduml

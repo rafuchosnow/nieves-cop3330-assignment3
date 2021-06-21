@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Exercise_45 {
+    - Replace particular words with other
+    - Call methods from another class
+    - Define variables
+    - Write the output to a new file
+}
+
+class WordFinder {
+    - Read the given file
+    - Process file as String
+    - Look for word occurrences
+    - Replace occurrences with desired word
+    - Ask user input for desired output file name
+
+    + readFile(fileText)
+    + replaceWords(fileText)
+    + writeFile(fileText)
+}
+
+Exercise_45 o--> WordFinder
+
+
+@enduml

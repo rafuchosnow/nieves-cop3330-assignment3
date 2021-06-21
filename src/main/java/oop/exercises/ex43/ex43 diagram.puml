@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Exercise_43 {
+    - Take user input
+    - Generate a website skeleton
+    - Call methods from another class
+    - Define variables
+
+    + userString()
+    + System.out.println()
+}
+
+class WebsiteManager {
+    - Create a website folder for the skeleton
+    - Create html file
+    - Create Javascript folder if required
+    - Create CSS folder if required
+    - Write author to index.html
+    - Write website name to index.html
+
+    + websiteName()
+    + htmlFile(Website)
+    + jsFolder(Website, Javascript)
+    + cssFolder(Website, CSS)
+    + writeFile(Website, Author)
+}
+
+Exercise_43 o--> WebsiteManager
+
+
+@enduml

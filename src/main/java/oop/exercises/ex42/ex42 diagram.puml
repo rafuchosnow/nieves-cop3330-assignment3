@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Exercise_42 {
+    - Break down file information
+    - Read in a data file
+    - Display results as a table
+    - Declare variables
+    - Print table
+
+    + ArrayList<String>(Arrays.asList())
+    + System.out.println()
+}
+
+class DataTable {
+    - Read the given file
+    - Process file as list
+    - Modify and break down data
+    - Concatenate output
+
+    + readFile(dataList)
+    + printTable(dataList)
+}
+
+Exercise_42 o--> DataTable
+
+
+@enduml
